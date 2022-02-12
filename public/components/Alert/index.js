@@ -14,7 +14,7 @@ const defaultProps = {
 const Alert = (props) => {
 	let { content, closeBtn, type } = { ...defaultProps, ...props };
 
-	if (!alertMap.hasOwnProperty[type]) type = 'primary';
+	if (!alertMap.hasOwnProperty(type)) type = 'primary';
 
 	const alertTypeClass = alertMap[type];
 
