@@ -17,6 +17,7 @@ const config = {
 	},
 	resolve: {
 		alias: {
+			'@app-vstrap': path.resolve(__dirname, 'public/vstrap/'),
 			'@app-components': path.resolve(__dirname, 'public/components/'),
 			'@app-styles': path.resolve(__dirname, 'public/styles/')
 		}
