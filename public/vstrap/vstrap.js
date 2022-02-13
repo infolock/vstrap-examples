@@ -1,10 +1,10 @@
 import { support } from './support';
-import Alert from '@app-components/Alert/';
-import CloseBtn from '@app-components/CloseBtn/';
-import Component from '@app-components/component';
+import Alert from './components/Alert/';
+import Button from './components/Button/';
+import CloseBtn from './components/CloseBtn/';
 
 export {
 	Alert,
-	CloseBtn,
-	Component
+	Button,
+	CloseBtn
 };
