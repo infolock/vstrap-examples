@@ -20,7 +20,8 @@ const config = {
 			'@app-vstrap': path.resolve(__dirname, 'public/vstrap/'),
 			'@app-components': path.resolve(__dirname, 'public/components/'),
 			'@app-styles': path.resolve(__dirname, 'public/styles/')
-		}
+		},
+		extensions: ['.js', '.jsx', '.tsx', '.ts', '.json']
 	},
 	mode: 'development',
 	module: {
@@ -28,6 +29,15 @@ const config = {
 			{
 				test: /\.css$/,
 				use: ['style-loader', 'css-loader'],
+			},
+			{
+				test: /\.tsx?$/,
+				loader: 'babel-loader',
+			},
+			{
+				test: /\.js$/,
+				use: ["source-map-loader"],
+				enforce: "pre"
 			},
 			{
 				test: /\.js$/,
